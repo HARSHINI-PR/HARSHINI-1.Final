@@ -1,0 +1,37 @@
+GET http://localhost:8087/profile/byApp/123
+
+###
+GET http://localhost:8087/profile/1
+
+####
+POST http://localhost:8087/profile/
+Content-Type: application/json
+{
+  "email": "john.doe@example.com",
+  "fullName": "John Doe",
+  "dob": "1990-01-01",
+  "contact": 1234567890,
+  "appId": 123
+
+}
+
+####
+PUT http://localhost:8087/profile/
+Content-Type: application/json
+
+{
+  "profileId": 5,
+  "email": "nandhu.doe@example.com",
+  "fullName": "Nandhana",
+  "dob": "2005-06-09",
+  "contact": 9877877798,
+  "appId": 125
+}
+
+
+###
+DELETE http://localhost:8087/profile/1
+
+###
+GET http://localhost:8087/profile/byApp/3
+Accept: application/json
